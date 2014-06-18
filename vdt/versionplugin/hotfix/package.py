@@ -28,7 +28,7 @@ def build_package(version):
             '--before-remove=%s' % join(dirname(__file__), 'preremove.sh'),
             '--template-scripts',
             '--python-install-lib=/usr/lib/python2.7/dist-packages/',
-        ] + extra_args
+        ] + extra_args + ['setup.py']
     else:
         cmd = [
             'fpm',
