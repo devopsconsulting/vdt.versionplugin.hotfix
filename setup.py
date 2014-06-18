@@ -22,6 +22,7 @@ setup(name=pkgname,
           "setuptools",
           "vdt.version",
           "vdt.versionplugin.default",
+          "vdt.versionplugin.debianize",
       ],
       entry_points={},
 )
