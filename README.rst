@@ -46,3 +46,12 @@ These hotfix packages can be pushed to a separate 'hotfix' repository and becaus
 number as the package it is based on, it will be installed on any environment running on that base version.
 
 Newer packages will have a higher version number and surpass the iteration.
+
+Plugin Arguments
+----------------
+
+::
+
+    --iteration The iteration number for the hotfix
+    -s Fpm input type, one of 'dir', 'rpm', 'gem', 'python', 'empty', 'tar', 'deb'.
+       The default is python, which has some default configuration.
