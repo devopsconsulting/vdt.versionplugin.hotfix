@@ -19,8 +19,9 @@ def build_package(version):
         cmd = [
         'fpm', 
             '-s', 'python',
-            '--version=%s' % version,
-            '--iteration=%s' % args.iteration,
+            # we build the hotfix version number manually and don't use "--iteration" flag because it produces versions
+            # dpkg is not able to handle consistently
+            '--version=%s.%s' % (version, args.iteration),
             '--exclude=*.pyc',
             '--exclude=*.pyo',
             '--depends=python',

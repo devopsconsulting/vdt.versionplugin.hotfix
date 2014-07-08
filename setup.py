@@ -24,5 +24,6 @@ setup(name=pkgname,
           "vdt.versionplugin.default",
           "vdt.versionplugin.debianize",
       ],
+      scripts = ['test-broken-apt-versioning.sh'],
       entry_points={},
 )
