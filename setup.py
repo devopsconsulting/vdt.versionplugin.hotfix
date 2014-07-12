@@ -7,7 +7,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name=pkgname,
-      version="0.0.2",
+      version="0.0.3",
       description="Create hotfix packages, these add an iteration on an existing version and do not create a tag.",
       long_description=read('README.rst'),
       author="Lars van de Kerkhof",
