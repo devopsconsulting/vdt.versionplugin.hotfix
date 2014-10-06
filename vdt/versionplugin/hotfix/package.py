@@ -34,8 +34,7 @@ def build_package(version):
         cmd = [
             'fpm',
             '-s', args.input_type,
-            '--version=%s' % version,
-            '--iteration=%s' % args.iteration,
+            '--version=%s.%s' % (version, args.iteration),
         ] + extra_args
 
     log.debug("Running command {0}".format(" ".join(cmd)))
